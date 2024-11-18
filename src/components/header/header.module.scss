@@ -1,0 +1,68 @@
+header {
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: linear-gradient(
+    90deg,
+    rgba(0, 27, 47, 1) 0%,
+    rgba(0, 86, 149, 1) 88%
+  );
+
+  color: white;
+  padding: 0 20px;
+
+  div {
+    width: 15vw;
+    input {
+      width: 100%;
+      color: white;
+      font-size: 16px;
+
+      background: url("../../assets/busca.png");
+      background-size: 15px;
+      background-repeat: no-repeat;
+      background-position: right 10px bottom 50%;
+      padding: 10px 35px 10px 20px;
+
+      border-radius: 20px;
+      border: 2px solid white;
+
+      &::placeholder {
+        color: white;
+        font-size: 16px;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  nav {
+    width: 25vw;
+    ul {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        a {
+          font-size: 18px;
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.boxLogo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+
+  h1 {
+    font-size: 28px;
+  }
+}
