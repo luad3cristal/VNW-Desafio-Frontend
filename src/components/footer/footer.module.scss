@@ -1,0 +1,33 @@
+footer {
+  color: white;
+  background-color: #005695;
+}
+
+.contactInfo {
+  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  nav {
+    display: flex;
+    gap: 10px;
+
+    img {
+      width: 35px;
+      cursor: pointer;
+    }
+  }
+}
+
+.disclaimer {
+  background-color: #232020;
+  height: 30%;
+  padding: 15px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}

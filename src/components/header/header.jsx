@@ -1,11 +1,10 @@
 import S from "./header.module.scss";
 import logo from "../../assets/logo.png";
-import busca from "../../assets/busca.png";
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Inicio from "../../Pages/Inicio/Inicio";
 import Doados from "../../Pages/Doados/Doados";
 import QueroDoar from "../../Pages/QueroDoar/QueroDoar";
-// importar a logo do assets
+import Footer from "../footer/footer";
 
 export default function Header() {
   return (
@@ -38,6 +37,8 @@ export default function Header() {
         <Route path="/doados" element={<Doados />} />
         <Route path="/queroDoar" element={<QueroDoar />} />
       </Routes>
+
+      <Footer />
     </BrowserRouter>
   );
 }
