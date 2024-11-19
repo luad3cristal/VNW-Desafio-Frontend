@@ -13,11 +13,11 @@ export default function footer() {
           <p>4002-8922</p>
         </div>
         <nav>
-          <img src={facebookLogo} alt="" />
-          <img src={twitterLogo} alt="" />
-          <img src={youtubeLogo} alt="" />
-          <img src={linkedinLogo} alt="" />
-          <img src={instagramLogo} alt="" />
+          <img src={facebookLogo} alt="logo do facebook" />
+          <img src={twitterLogo} alt="logo do twitter" />
+          <img src={youtubeLogo} alt="logo do youtube" />
+          <img src={linkedinLogo} alt="logo do linkedin" />
+          <img src={instagramLogo} alt="logo do instagram" />
         </nav>
       </section>
       <section className={S.disclaimer}>
