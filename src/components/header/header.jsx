@@ -4,7 +4,6 @@ import { BrowserRouter, Route, Routes, Link } from "react-router-dom";
 import Inicio from "../../Pages/Inicio/Inicio";
 import Doados from "../../Pages/Doados/Doados";
 import QueroDoar from "../../Pages/QueroDoar/QueroDoar";
-import Footer from "../footer/footer";
 
 export default function Header() {
   return (
@@ -37,8 +36,6 @@ export default function Header() {
         <Route path="/doados" element={<Doados />} />
         <Route path="/queroDoar" element={<QueroDoar />} />
       </Routes>
-
-      <Footer />
     </BrowserRouter>
   );
 }
