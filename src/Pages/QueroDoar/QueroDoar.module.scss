@@ -3,6 +3,8 @@
   align-items: center;
   flex-direction: column;
 
+  height: 85vh;
+
   padding: 25px;
   gap: 25px;
 
@@ -13,6 +15,7 @@
   @media (max-width: 390px) {
     padding: 25px 50px;
     text-align: center;
+    height: auto;
   }
 }
 
