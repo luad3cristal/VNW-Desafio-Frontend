@@ -20,30 +20,44 @@
       font-family: "Roboto", sans-serif;
       font-size: 32px;
       font-weight: 700;
+
+      @media (max-width: 390px) {
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 390px) {
+      height: 80vh;
+      background-position: left 35% bottom 0px;
     }
   }
 
   .content {
-    height: 86vh;
-    padding: 50px;
+    height: 71vh;
+
+    margin: 40px;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 60px;
 
     h2 {
       font-size: 40px;
       font-weight: 500;
       color: #005695;
+
+      @media (max-width: 390px) {
+        font-size: 34px;
+        text-align: center;
+      }
     }
 
     .cards {
-      height: 50vh;
       display: flex;
       align-items: center;
       justify-content: space-between;
 
       .card {
-        width: 286px;
+        width: 306px;
         height: 321px;
 
         border-radius: 10px;
@@ -58,7 +72,31 @@
         align-items: center;
         justify-content: space-around;
         background-color: #0157944d;
+
+        @media (max-width: 390px) {
+          width: 254px;
+          height: 182px;
+
+          gap: 10px;
+
+          font-size: 18px;
+          padding: 10px 15px;
+
+          img {
+            width: 50px;
+          }
+        }
       }
+
+      @media (max-width: 390px) {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+
+    @media (max-width: 390px) {
+      gap: 20px;
+      height: auto;
     }
   }
 }
