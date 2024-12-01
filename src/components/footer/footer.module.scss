@@ -16,7 +16,19 @@ footer {
     img {
       width: 35px;
       cursor: pointer;
+
+      @media (max-width: 390px) {
+        width: 22px;
+      }
     }
+  }
+
+  @media (max-width: 390px) {
+    padding: 10px 40px;
+    flex-direction: column;
+    gap: 15px;
+
+    font-size: 15px;
   }
 }
 
@@ -30,4 +42,9 @@ footer {
   justify-content: center;
 
   text-align: center;
+
+  @media (max-width: 390px) {
+    font-size: 12px;
+    padding: 15px 15%;
+  }
 }
