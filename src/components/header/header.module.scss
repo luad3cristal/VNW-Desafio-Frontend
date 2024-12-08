@@ -15,15 +15,16 @@ header {
 
   div {
     input {
-      width: 100%;
-      color: white;
-      font-size: 16px;
-
       background: url("../../assets/busca.png");
       background-size: 15px;
       background-repeat: no-repeat;
       background-position: right 10px bottom 50%;
+
+      width: 100%;
       padding: 10px 35px 10px 20px;
+
+      color: white;
+      font-size: 16px;
 
       border-radius: 20px;
       border: 2px solid white;
@@ -36,31 +37,44 @@ header {
       &:focus {
         outline: none;
       }
+      @media (max-width: 1011px) {
+        font-size: 12px;
+        padding: 10px 20px 10px 20px;
+
+        &::placeholder {
+          font-size: 12px;
+        }
+      }
     }
-    @media (max-width: 390px) {
+    @media (max-width: 770px) {
       display: none;
     }
   }
 
   nav {
-    width: 25vw;
+    width: 35vw;
     ul {
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      li {
-        a {
-          font-size: 18px;
-          color: white;
+      a {
+        font-size: 18px;
+        color: white;
+        @media (max-width: 1011px) {
+          font-size: 15px;
         }
       }
     }
+    @media (max-width: 770px) {
+      width: 40vw;
+    }
+
     @media (max-width: 390px) {
       width: 90%;
     }
   }
 
-  @media (max-width: 390px) {
+  @media (max-width: 770px) {
     flex-direction: column;
     height: 20vh;
 
@@ -70,19 +84,29 @@ header {
 }
 
 .boxLogo {
+  margin-right: 10px;
+
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 15px;
 
   h1 {
-    font-size: 28px;
-    @media (max-width: 390px) {
-      font-size: 22px;
+    font-size: 25px;
+    @media (max-width: 1011px) {
+      font-size: 18px;
+    }
+
+    @media (max-width: 770px) {
+      font-size: 20px;
     }
   }
   img {
-    @media (max-width: 390px) {
+    @media (max-width: 1011px) {
+      width: 50px;
+    }
+
+    @media (max-width: 770px) {
       width: 40px;
     }
   }
