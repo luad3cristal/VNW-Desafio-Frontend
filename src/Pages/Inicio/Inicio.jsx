@@ -12,7 +12,9 @@ export default function Inicio() {
           <h2>VENHA FAZER PARTE DA MAIOR REDE DE DOAÇÃO</h2>
         </section>
         <section className={S.content}>
-          <h2>Por que devo doar?</h2>
+          <div>
+            <h2>Por que devo doar?</h2>
+          </div>
 
           <section className={S.cards}>
             <div className={S.card}>
