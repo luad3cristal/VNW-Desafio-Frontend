@@ -2,8 +2,9 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 
-  height: 85vh;
+  height: auto;
 
   padding: 25px;
   gap: 25px;
@@ -11,21 +12,11 @@
   .aviso {
     font-size: 18px;
   }
-
-  @media (max-width: 1100px) {
-    height: auto;
-  }
-
-  @media (max-width: 390px) {
-    padding: 25px 50px;
-    text-align: center;
-    height: auto;
-  }
 }
 
 form {
   height: 520px;
-  min-width: 315px;
+  min-width: 310px;
   width: 80%;
   max-width: 500px;
   padding: 25px 25px 0;
@@ -44,17 +35,10 @@ form {
     justify-content: space-evenly;
 
     color: #005695;
+    font-size: 15px;
 
     img {
-      width: 56px;
-
-      @media (max-width: 490px) {
-        width: 46px;
-      }
-    }
-
-    @media (max-width: 490px) {
-      font-size: 14px;
+      width: 48px;
     }
   }
 
