@@ -3,48 +3,38 @@ footer {
   background-color: #005695;
 }
 
-.contactInfo {
-  padding: 20px 50px;
+.contact_container {
+  padding: 20px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  font-size: 15px;
 
   nav {
     display: flex;
-    gap: 10px;
+    gap: 20px;
 
     img {
-      width: 35px;
+      width: 30px;
       cursor: pointer;
-
-      @media (max-width: 390px) {
-        width: 22px;
-      }
     }
   }
 
-  @media (max-width: 426px) {
-    padding: 10px 40px;
-    flex-direction: column;
-    gap: 15px;
-
-    font-size: 15px;
+  @media (max-width: 412px) {
+    justify-content: center;
   }
 }
 
 .disclaimer {
   background-color: #232020;
-  height: 30%;
-  padding: 15px;
+  padding: 10px 30px;
+  font-size: 14px;
 
   display: flex;
   align-items: center;
   justify-content: center;
-
   text-align: center;
-
-  @media (max-width: 390px) {
-    font-size: 12px;
-    padding: 15px 15%;
-  }
 }

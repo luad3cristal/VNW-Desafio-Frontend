@@ -8,7 +8,7 @@ import instagramLogo from "../../assets/instagram-logo.png";
 export default function footer() {
   return (
     <footer>
-      <section className={S.contactInfo}>
+      <section className={S.contact_container}>
         <div>
           <p>4002-8922</p>
         </div>
