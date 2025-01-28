@@ -1,4 +1,4 @@
-.doadosBox {
+.livros_doados {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -17,25 +17,23 @@
 
       height: 230px;
       width: 210px;
+      padding: 10px 5px;
 
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-around;
+      justify-content: space-between;
 
-      > div {
+      .card_content {
+        width: 100%;
+
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 8px;
 
         font-size: 16px;
-        
       }
     }
-  }
-
-  @media (max-width: 390px) {
-    height: 80vh;
   }
 }
