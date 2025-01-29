@@ -1,5 +1,5 @@
 header {
-  height: 15vh;
+  height: 15dvh;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -84,7 +84,7 @@ header {
 
   @media (max-width: 770px) {
     flex-direction: column;
-    height: 20vh;
+    height: 20dvh;
 
     justify-content: space-evenly;
     align-items: center;
