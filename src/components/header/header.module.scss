@@ -1,11 +1,7 @@
 header {
-<<<<<<< HEAD
   width: 100%;
   padding: 20px;
 
-=======
-  height: 15dvh;
->>>>>>> 935d474398394afa56f550985d7010dcdcf45f7a
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -75,17 +71,8 @@ header {
     }
   }
 
-<<<<<<< HEAD
   @media (max-width: 1011px) {
     justify-content: center;
-=======
-  @media (max-width: 770px) {
-    flex-direction: column;
-    height: 20dvh;
-
-    justify-content: space-evenly;
-    align-items: center;
->>>>>>> 935d474398394afa56f550985d7010dcdcf45f7a
   }
 }
 
