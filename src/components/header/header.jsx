@@ -13,7 +13,7 @@ export default function Header() {
           <img src={logo} alt="imagem de um livro" />
           <h1>Livros Vai na Web</h1>
         </section>
-        <div className={S.wrap_container}>
+        <section className={S.wrap_container}>
           <nav>
             <ul>
               <li>
@@ -30,7 +30,7 @@ export default function Header() {
           <section className={S.input_container}>
             <input type="text" placeholder="O que você procura?" />
           </section>
-        </div>
+        </section>
       </header>
 
       <Routes>
