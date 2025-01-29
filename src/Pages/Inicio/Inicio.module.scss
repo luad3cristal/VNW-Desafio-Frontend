@@ -6,7 +6,7 @@
     background-image: url("../../assets/livros.png");
     background-repeat: no-repeat;
     background-size: cover;
-    height: 88vh;
+    height: 88dvh;
     display: flex;
     align-items: center;
     color: white;
@@ -21,7 +21,7 @@
     height: 80vh;
 
     div {
-      height: 15vh;
+      height: 15dvh;
       display: flex;
       align-items: center;
       h2 {
@@ -32,7 +32,7 @@
     }
 
     .cards {
-      height: 50vh;
+      height: 50dvh;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -82,7 +82,7 @@
     }
 
     .content {
-      height: 120vh;
+      height: 120dvh;
       div {
         justify-content: center;
         h2 {
@@ -90,7 +90,7 @@
         }
       }
       .cards {
-        height: 100vh;
+        height: 100dvh;
         flex-wrap: wrap;
         gap: 20px;
         .card {
@@ -108,7 +108,7 @@
 @media (max-width: 427px) {
   .inicioBox {
     .content {
-      height: 150vh;
+      height: 150dvh;
       justify-content: space-evenly;
       display: flex;
       flex-direction: column;

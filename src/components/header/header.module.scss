@@ -1,121 +1,93 @@
 header {
-  height: 15vh;
+  width: 100%;
+  padding: 20px;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 20px;
+  flex-wrap: wrap;
+  gap: 25px;
 
   background: linear-gradient(
     90deg,
     rgba(0, 27, 47, 1) 0%,
     rgba(0, 86, 149, 1) 88%
   );
-
   color: white;
 
-  div {
-    input {
-      background: url("../../assets/busca.png");
-      background-size: 15px;
-      background-repeat: no-repeat;
-      background-position: right 10px bottom 50%;
+  .wrap_container {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
 
-      width: 100%;
-      padding: 10px 35px 10px 20px;
+    nav {
+      min-width: 300px;
+      width: 50%;
+      ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
 
-      color: white;
-      font-size: 16px;
+        li {
+          a {
+            color: white;
+          }
+        }
+      }
+    }
 
-      border-radius: 20px;
-      border: 2px solid white;
+    .input_container {
+      min-width: 200px;
+      width: 25%;
+      input {
+        background: url("../../assets/busca.png");
+        background-size: 15px;
+        background-repeat: no-repeat;
+        background-position: right 10px bottom 50%;
 
-      &::placeholder {
+        width: 100%;
+        padding: 10px 20px 10px 15px;
+
         color: white;
-        font-size: 16px;
-      }
+        font-size: 13px;
 
-      &:focus {
-        outline: none;
-      }
-      @media (max-width: 1011px) {
-        font-size: 12px;
-        padding: 10px 20px 10px 20px;
+        border-radius: 20px;
+        border: 2px solid white;
 
         &::placeholder {
-          font-size: 12px;
+          color: white;
+          font-size: 13px;
+        }
+
+        &:focus {
+          outline: none;
         }
       }
-    }
-    @media (max-width: 770px) {
-      display: none;
-    }
-  }
-
-  nav {
-    width: 35vw;
-    ul {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      a {
-        font-size: 18px;
-        color: white;
-        @media (max-width: 1011px) {
-          font-size: 15px;
-        }
-      }
-
       @media (max-width: 770px) {
-        justify-content: space-evenly;
+        display: none;
       }
-
-      @media (max-width: 560px) {
-        justify-content: space-between;
-      }
-    }
-    @media (max-width: 770px) {
-      width: 62vw;
-    }
-
-    @media (max-width: 390px) {
-      width: 90%;
     }
   }
 
-  @media (max-width: 770px) {
-    flex-direction: column;
-    height: 20vh;
-
-    justify-content: space-evenly;
-    align-items: center;
+  @media (max-width: 1011px) {
+    justify-content: center;
   }
 }
 
-.boxLogo {
-  margin-right: 10px;
-
+.logo_container {
+  width: max-content;
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 15px;
+  gap: 10px;
 
   h1 {
-    font-size: 25px;
-    @media (max-width: 1011px) {
-      font-size: 18px;
-    }
-
-    @media (max-width: 770px) {
-      font-size: 20px;
-    }
+    font-size: 22px;
   }
-  img {
-    @media (max-width: 1011px) {
-      width: 50px;
-    }
 
-    @media (max-width: 770px) {
-      width: 40px;
-    }
+  img {
+    width: 45px;
   }
 }
