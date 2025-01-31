@@ -35,6 +35,9 @@ header {
             color: white;
           }
         }
+        @media (max-width: 375px) {
+          justify-content: space-around;
+        }
       }
     }
 
@@ -68,6 +71,9 @@ header {
       @media (max-width: 770px) {
         display: none;
       }
+    }
+    @media (max-width: 770px) {
+      width: 100%;
     }
   }
 
