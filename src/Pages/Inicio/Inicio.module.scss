@@ -1,4 +1,8 @@
-.inicioBox {
+.inicio_container {
+  min-height: 100vh;
+  height: auto;
+  width: 100%;
+
   display: flex;
   flex-direction: column;
 
@@ -6,116 +10,172 @@
     background-image: url("../../assets/livros.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+
     height: 88dvh;
+    width: 100%;
+
     display: flex;
     align-items: center;
-    color: white;
+    padding-left: 100px;
+
     h2 {
-      width: 27vw;
-      margin-left: 130px;
+      min-width: 300px;
+      width: 30%;
+
+      color: white;
       font-size: 40px;
+
+      @media (max-width: 375px) {
+        font-size: 35px;
+      }
+    }
+
+    @media (max-width: 760px) {
+      justify-content: center;
+      text-align: center;
+      padding: 0;
     }
   }
 
   .content {
-    height: 80vh;
+    min-height: 80vh;
+    width: 100%;
+    padding: 40px 50px;
 
-    div {
-      height: 15dvh;
-      display: flex;
-      align-items: center;
-      h2 {
-        font-size: 30px;
-        color: rgba(0, 86, 149, 1);
-        margin-left: 65px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    h2 {
+      font-size: 30px;
+      color: rgba(0, 86, 149, 1);
+
+      @media (max-width: 1300px) {
+        text-align: center;
       }
     }
 
     .cards {
-      height: 50dvh;
+      min-height: 400px;
+      height: 60%;
       display: flex;
-      align-items: center;
-      justify-content: space-evenly;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 30px 5px;
+
       .card {
-        width: 20%;
-        height: 80%;
+        height: 300px;
+        width: 90%;
+        max-width: 290px;
+
         background-color: rgba(1, 87, 148, 0.3);
+        border-radius: 20px;
+
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: space-evenly;
-        border-radius: 20px;
+        justify-content: space-around;
+
+        img {
+          width: 100px;
+        }
+
         p {
-          width: 70%;
-          font-size: 20px;
+          width: 80%;
           text-align: center;
+          font-size: 18px;
         }
+      }
+
+      @media (max-width: 1300px) {
+        justify-content: space-evenly;
       }
     }
   }
 }
 
-@media (max-width: 1100px) {
-  .inicioBox {
-    .content {
-      .cards {
-        .card {
-          p {
-            font-size: 1.5vw;
-          }
-        }
-      }
-    }
-  }
-}
+// .cards {
+//   height: 400px;
 
-@media (max-width: 760px) {
-  .inicioBox {
-    .announcement {
-      justify-content: center;
-      h2 {
-        width: 70%;
-        text-align: center;
-        font-size: 28px;
-        margin-left: 0;
-      }
-    }
+//   display: flex;
+//   flex-wrap: wrap;
+//   justify-content: space-between;
+//   gap: 30px 10px;
 
-    .content {
-      height: 120dvh;
-      div {
-        justify-content: center;
-        h2 {
-          margin-left: 0;
-        }
-      }
-      .cards {
-        height: 100dvh;
-        flex-wrap: wrap;
-        gap: 20px;
-        .card {
-          width: 200px;
-          height: 250px;
-          p {
-            font-size: 14px;
-          }
-        }
-      }
-    }
-  }
-}
+//   .card {
+//     min-width: 280px;
+//     width: 23%;
+//     min-height: 250px;
+//     height: 90%;
 
-@media (max-width: 427px) {
-  .inicioBox {
-    .content {
-      height: 150dvh;
-      justify-content: space-evenly;
-      display: flex;
-      flex-direction: column;
+//     background-color: rgba(1, 87, 148, 0.3);
+//     border-radius: 20px;
 
-      .cards {
-        height: auto;
-      }
-    }
-  }
-}
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: space-evenly;
+//     p {
+//       width: 80%;
+//       font-size: 20px;
+//       text-align: center;
+//     }
+//   }
+// }
+
+// @media (max-width: 760px) {
+//   justify-content: center;
+//   padding: 50px;
+// }
+
+// @media (max-width: 760px) {
+//   .inicio_container {
+//     .announcement {
+//       justify-content: center;
+//       h2 {
+//         width: 70%;
+//         text-align: center;
+//         font-size: 28px;
+//         margin-left: 0;
+//       }
+//     }
+
+//     .content {
+//       height: 120dvh;
+//       div {
+//         justify-content: center;
+//         h2 {
+//           margin-left: 0;
+//         }
+//       }
+//       .cards {
+//         height: 100dvh;
+//         flex-wrap: wrap;
+//         gap: 20px;
+//         .card {
+//           width: 200px;
+//           height: 250px;
+//           p {
+//             font-size: 14px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
+// @media (max-width: 427px) {
+//   .inicio_container {
+//     .content {
+//       height: 150dvh;
+//       justify-content: space-evenly;
+//       display: flex;
+//       flex-direction: column;
+
+//       .cards {
+//         height: auto;
+//       }
+//     }
+//   }
+// }
