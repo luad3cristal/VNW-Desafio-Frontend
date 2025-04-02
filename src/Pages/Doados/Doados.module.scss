@@ -10,6 +10,10 @@
   .cards {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
 
     .card {
       border: 3px solid #005695;
@@ -23,6 +27,10 @@
       flex-direction: column;
       align-items: center;
       justify-content: space-between;
+
+      img {
+        width: 100px;
+      }
 
       .card_content {
         width: 100%;
